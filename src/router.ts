@@ -6,8 +6,8 @@ const router = Router()
  * Product
  */
 
-router.get('/product', () => {
-
+router.get('/product', (req, res) => {
+    res.json("hello")
 })
 
 router.get('/product/:id', () => {
@@ -73,3 +73,5 @@ router.post('/updatepoint', () => {
 router.delete('/updatepoint:id', () => {
     
 })
+
+export default router;
